@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    border: 2px solid black;
+}
+.base{
+    background-color: white;
+    min-width: 1440px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: auto;
+}
+.panel{
+    width: 1080px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: 75px;
+    margin: auto;
+}
+.panelcontent{
+    min-width: 1080px;
+    display: flex;
+    text-align: center;
+}
+.panellogo{
+    height: 75px;
+}
+.panellogo img{
+    width: auto;
+    height: 100%;
+}
+.panelmenu{
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 700px;
+    height: 75px;
+}
+.menucontent{
+    padding: 20px 10px;
+    display: flex;
+    height: 15px;
+    margin: auto;
+    font-size: 20px;
+    width: 800px;
+}
+.menu{
+    font-size: 45px;
+    padding-right: 300px ;   
+}
+.menu1{
+    font-weight: bold;
+}
+.body{
+    width: 1080px;
+    padding-top: 55px;
+    margin: auto;
+    padding-bottom: 55px;
+}
+.home{
+    width: 900px;
+}
+.hometext{
+    font-size: 25px;
+    width: 900px;
+    font-family: auto;
+}
+.background{
+    margin: 0px;
+    padding: 10px 0px;
+    background-color: #eaeaea;
+}

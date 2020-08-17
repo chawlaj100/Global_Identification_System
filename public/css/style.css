@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html, body{
+    margin: 0px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.base{
+    background-color: white;
+    min-width: 1440px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: auto;
+}
+.panel{
+    width: 1080px;
+    padding-top: 50px;
+    height: 75px;
+    margin: auto;
+}
+.panelcontent{
+    min-width: 1080px;
+    display: flex;
+    text-align: center;
+}
+.panellogo{
+    height: 75px;
+}
+.panellogo img{
+    width: auto;
+    height: 100%;
+}
+.panelmenu{
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 500px;
+    height: 75px;
+    display: flex;
+}
+.menucontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    width:500px;
+}
+.menu{
+    font-weight: bold;
+    margin: 0px auto;
+    padding: 10px;
+}
+.body{
+    width: 1080px;
+    padding-top: 75px;
+    margin: auto;
+    padding-bottom: 75px;
+}
+.home{
+    width: 900px;
+}
+.hometitle{
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.hometext{
+    font-size: 25px;
+    width: 750px;
+    font-family: auto;
+}
+.homep{
+    padding: 5px 0px;
+}
+.background{
+    margin: 0px;
+    padding: 20px 0px;
+    background-color: #eaeaea;
+}
+.login{
+    width: 1080px;
+    margin: auto;
+    padding: 25px 0px;
+}
+.loginhead{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.logintext{
+    padding-top: 5px;
+    font-size: 20px;
+}
+.loginbuttons{
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    width: 300px;
+}
+.loginbuttona{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid steelblue;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: 0px; 
+}
+.loginbuttona:hover{
+    background-color: steelblue;
+}
+.loginbuttona:hover .loginbutton{
+    color: white;
+    cursor: pointer;
+}
+.loginbutton{
+    font-size: 20px;
+    background-color: transparent;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    color: steelblue;
+}
+.chal{
+    width: 1000px;
+}
+.chaltitle{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px; 
+}
+.chaltext{
+    display: flex;
+}
+.chalul{
+    font-size: 25px;
+}
+li{
+    padding: 15px 0px;
+}
+.feat{
+    width: 1080px;
+    margin: auto;
+    padding: 25px 0px;
+}
+.feathead{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.feattext{
+    padding-top: 5px;
+    font-size: 25px;
+    display: flex;
+}
+.featul{
+    width: 540px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Global Identification System - Login</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="base">
+            <div class="panel">
+                <div class="panelcontent">
+                    <div class="panellogo">
+                        <a href="/index"><img src="img/LOGO_FINAL.png" alt=""></a>
+                    </div>
+                    <div class="panelmenu">
+                        <div class="menucontent">
+                            <span class="menu link">
+                                <a href="/index">Home</a>
+                            </span>
+                            <span class="menu link">
+                                <a href="#">Login</a>
+                            </span>
+                            <span class="menu link">
+                                <a href="registration">Sign Up</a>
+                            </span>
+                            <!--<span class="menu">
+                                <a href="#featid">feature</a>
+                            </span>-->
+                            <!--<span class="menu">about us</span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body" id="homeid">
+                <div class="home">
+                    <div class="hometitle">
+                        <div class="titlecontent">Welcome!</div>
+                        <div class="titlecontent"> Login here</div>
+                    </div>
+                    <div class="error"><%= msg %></div>
+                    <div class="homeform">
+                        <form action="/log_in"  method="POST" name="login_form">
+                            <div class="formdiv">
+                                <label for="loginform-email" class="formlabel">Email Id<br></label>
+                                <input type="email" id="loginform-email" aria-required="true" placeholder="email here" name="email_id" onblur="email_check()"required>
+                            </div>
+                            <div class="error" id="valid_mail" style="visibility: hidden">
+                                Email-id is Invalid.
+                            </div>
+                            <div class="formdiv">
+                                <label for="loginform-password" class="formlabel">Password</label>
+                                <input type="password" id="loginform-password" aria-required="true"  placeholder="password here" name="password_id" required>
+                            </div>
+                            <div class="formdiv">
+                                <button type="submit" onclick="email_check()">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </body>
+    <script type="text/javascript">
+        function email_check()
+        {
+            var email = document.login_form.email_id;
+            var correct_mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var validate = document.getElementById("valid_mail");
+            if (email.value.match(correct_mail)){
+                validate.style.visibility = "hidden";
+                return true;
+            }
+            else{
+                validate.style.visibility = "visible";
+                event.preventDefault();
+                return false
+            }
+        } 
+    </script>
+</html>

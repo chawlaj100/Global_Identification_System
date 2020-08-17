@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    background-color: aliceblue;
+    margin: 0px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.base{
+    min-width: 1440px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: auto;
+}
+.panel{
+    width: 1080px;
+    padding-top: 50px;
+    height: 75px;
+    margin: auto;
+}
+.panelcontent{
+    min-width: 1080px;
+    display: flex;
+    text-align: center;
+}
+.panellogo{
+    height: 75px;
+}
+.panellogo img{
+    width: auto;
+    height: 100%;
+}
+.panelmenu{
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 500px;
+    height: 75px;
+    display: flex;
+}
+.menucontent{
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    width:500px;
+}
+.menu{
+    font-weight: bold;
+    margin: 0px auto;
+    padding: 10px;
+}
+.body{
+    width: 1080px;
+    padding-top: 65px;
+    margin: auto;
+    padding-bottom: 75px;
+}
+.home{
+    width: 1080px;
+}
+.hometitle{
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+.titlecontent{
+    width: max-content;
+    margin: 0px auto;
+    padding: 5px 0px;
+}
+.homeform{
+    width: 400px;
+    margin: 0px auto;
+    padding: 50px 50px;
+    margin-top: 30px;
+    background-color: #eaeaea;
+    border-radius: 5%;
+}
+.error{
+    font-size: 20px;
+    color: red;
+    padding: auto;
+    text-align: center;
+}
+.formdiv{
+    padding: 10px 0px;
+}
+.formlabel{
+    font-weight: bold;
+    min-width:400px;
+    padding: 5px 0px;
+    color: #4c4c4c;
+}
+input{
+    width:100%;
+    height: 30px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: aliceblue;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus{
+    transform: scale(1.05);
+}
+
+button{
+    width: 100%;
+    height: 36px;
+    background-color: transparent;
+    border: 2px solid #4900D0;
+    border-radius: 16px;
+    color: #4900D0;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #4900D0;
+    color: white;
+}
